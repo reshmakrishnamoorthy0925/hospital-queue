@@ -281,7 +281,7 @@ def login_required(f):
 def index():
     """Main dashboard page"""
     with open('index.html','r') as f:
-    return f.read()
+        return f.read()
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     """Simple login for demo"""

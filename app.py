@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, jsonify, session, redirect, url_for, flash
+from flask import Flask, request, jsonify, session, redirect, url_for, flash
 from datetime import datetime, timedelta
 import heapq
 import hashlib
@@ -280,7 +280,7 @@ def login_required(f):
 @app.route('/')
 def index():
     """Main dashboard page"""
-    with open('index.html') as f:
+    with open('index.html','r') as f:
     return f.read()
 @app.route('/login', methods=['GET', 'POST'])
 def login():

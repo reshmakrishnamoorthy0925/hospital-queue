@@ -898,4 +898,4 @@ if __name__ == '__main__':
     print("   ✓ Appointment Scheduling API")
     print("\n" + "=" * 60)
     
-    app.run(debug=True, port=5000, use_reloader=False)
+    app.run(debug=True, port=5000,host="0.0.0.0", use_reloader=False)
